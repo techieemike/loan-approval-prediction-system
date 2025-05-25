@@ -22,11 +22,11 @@ loan-default-prediction/
 │   │   └── train_data.csv
         └── test_data.csv
 │   ├── processed/
-│   │   └── cleaned_loan_data.csv
+│   │   └── cleaned_test_data.csv
+│       └── cleaned_train_data.csv
 │
 ├── 📁 notebooks/
 │   └── loan_default_analysis.ipynb     # Main Jupyter Notebook
-│
 ├── 📁 src/
 │   ├── preprocessing.py                # Clean & transform data
 │   ├── feature_engineering.py          # Create and select features
@@ -34,12 +34,19 @@ loan-default-prediction/
 │   ├── prediction.py                   # Make predictions using saved model
 │   └── visualization.py                # Charts & plots (EDA, feature importance)
 ├── 📁 models/
-│   └── loan_model.pkl                  # Saved model
+│   └── best_loan_model.pkl                  # Saved model
+│   └── label_encoders.pkl
+│   └── onehot_encoder.pkl
+│   └── X_processed.pkl
+│   └── y_encoded.pkl
+│   └── scaler/
+│       └── scaler.pkl
+│   └── pca/
+│       └── pca.pkl
 ├── 📁 outputs/
-│   ├── plots/
-│   │   └── feature_importance.png
-│   └── metrics/
-│       └── classification_report.txt
+│   └── df_test_predictions.csv
+│   └── test_predictions_from_df_train.csv
+│     
 │
 ├── 📄 README.md                        # Project overview
 ├── 📄 requirements.txt                 # Python dependencies
