@@ -81,32 +81,81 @@ loan-default-prediction/
    git clone https://github.com/techieemike/loan-approval-prediction-system.git
    cd loan-approval-prediction-system
 
+2. Create and activate a virtual environment:
+    # On Windows:
+    venv\Scripts\activate
+    # On macOS/Linux:
+    source venv/bin/activate
+4. Install dependencies:
+    pip install -r requirements.txt
+5. launch the streamlit app:
+   streamlit run appy.py
+
 
 
 
 📌 Roadmap
-✅ Load and inspect dataset
-
-✅ Handle missing values
-
-✅ Perform feature engineering
-
-✅ Train multiple classifiers
-
-✅ Evaluate best-performing model
-
-⏳ Add model explainability (SHAP)
-
-⏳ Deploy as a Streamlit dashboard or REST API
+✅ Load and inspect dataset  
+✅ Handle missing values  
+✅ Perform feature engineering  
+✅ Train multiple classifiers (Logistic Regression, Decision Tree, Random Forest, SVC, KNN, Naive Bayes)  
+✅ Evaluate best-performing model  
+✅ Compare model performance using AUC-ROC and Accuracy  
+⭐ Best Model: Logistic Regression (Accuracy: 0.8618, AUC-ROC: 0.8498)  
+✅ Deploy as a Streamlit dashboard or REST API  
 
 
 
 
+## 📈 Model Results
+
+| Model                  | Accuracy | AUC-ROC |
+|------------------------|----------|---------|
+| Logistic Regression    | 0.8618   | 0.8498  |
+| Decision Tree          | 0.7317   | 0.7040  |
+| Random Forest          | 0.8374   | 0.7814  |
+| Support Vector Machine | 0.8455   | 0.7941  |
+| K-Nearest Neighbors    | 0.7886   | 0.7471  |
+| Naive Bayes            | 0.7724   | 0.7542
+  |
+
+✅ **Best Model:** Logistic Regression with **Accuracy: 0.8618** and **AUC-ROC: 0.8498**
 
 
+
+
+---
+
+### 3. 📊 Add a Feature Summary Table
+
+## 🔍 Feature Summary
+
+| Feature              | Description                                |
+|----------------------|--------------------------------------------|
+| Gender               | Male/Female                                |
+| Married              | Yes/No                                     |
+| Dependents           | Number of dependents                       |
+| Education            | Graduate/Not Graduate                      |
+| Self_Employed        | Self-employed status                       |
+| ApplicantIncome      | Income of the applicant                    |
+| CoapplicantIncome    | Income of co-applicant                     |
+| LoanAmount           | Loan amount requested                      |
+| Loan_Amount_Term     | Term of the loan                           |
+| Credit_History       | Credit history (1: good, 0: bad)           |
+| Property_Area        | Rural / Semiurban / Urban                  |
+
+
+```
 
  🤝 Contributing
 Have suggestions, issues, or improvements? Feel free to submit a pull request or open an issue.
+
+
+Badges
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
+![Status](https://img.shields.io/badge/status-deployed-brightgreen)
 
 
 
